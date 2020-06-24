@@ -1,0 +1,170 @@
+freeze:
+  command: "/ban %player% leave in ss"
+scoreboard:
+    title: "&eRosario &7[&cMap 1&7]"
+    bars: false
+    spawntag_decimals: false   
+    display:
+    - "&7&m-------------------------------------------"
+    - "&9&l%kothname%: &4%kothtime%"
+    - "&cFaction: &f%faction%"
+    - "&cDtr: &f%factiondtr%"
+    - "&6&lArcher Mark: %archermark%"
+    - "&4Eotw:&f %eotwremaining%"
+    - "&eSotw:&f %sotwremaining%"
+    - "&eOnline&f:&f %onlineplayers%"
+    - "&eEnderpearl&f: %enderpearl%"
+    - "&aPvP Timer&f: %pvptimer%"
+    - "&cNotch&f: %notchapple%"
+    - "&4Logout&f: %logout%"
+    - "&cSpawn tag&f: %spawntag%"
+    - "&5Stuck&f: %fstuck%" 
+    - "&5Home&f: %home%"
+    - "&a&lActive Class&f: %class%"
+    - "&a&lBard energy&f: %energy%"  
+    - "&a&lBard Effect&f: %bardeffect%"   
+    - "&5&lWarmup&f: %warmuptimer%"
+    - "&7&m-------------------------------------------"    
+end-exit:
+   x: 0
+   y: 80
+   z: 120 
+event:
+  koth:
+    formatted: "%name%"
+    command: "/crate give %winner% Koth" 
+  conquest:
+    formatted: "%name%"
+    command: "/crate give %winner% Conquest"    
+death-signs: true
+found-diamonds: true
+deathban-time: 60000
+kit-map: false  
+instant-soup:
+  enabled: false
+  health-regain: 7.0
+  hunger-regain: 7
+end:
+  open: true
+  exitLocation:
+    worldName: world
+    worldUID: 99b9c8d6-76a9-4b41-9328-231f81719394
+    x: "0.5"
+    y: "77.0"
+    z: "0.5"
+    pitch: "0.0"
+    yaw: "0.0"
+enchant-limits:
+  PROTECTION_ENVIRONMENTAL: 3
+  PROTECTION_FIRE: 3
+  SILK_TOUCH: 1
+  DURABILITY: 3
+  PROTECTION_EXPLOSIONS: 3
+  LOOT_BONUS_BLOCKS: 3
+  PROTECTION_PROJECTILE: 3
+  OXYGEN: 3
+  WATER_WORKER: 1
+  THORNS: 0
+  DAMAGE_ALL: 3
+  ARROW_KNOCKBACK: 1
+  KNOCKBACK: 1
+  FIRE_ASPECT: 1
+  LOOT_BONUS_MOBS: 3
+  LUCK: 3
+  LURE: 3
+potion-limits:
+  STRENGTH: 0
+  INVISIBILITY: 0
+  REGEN: 0
+  WEAKNESS: 0
+  INSTANT_DAMAGE: 0
+  SLOWNESS: 1
+  POISON: 1
+teamspeak_url: "none"
+donate_url: "none"
+reddit_url: "none"    
+
+freeze_leave:
+  - "&7-----------------------------"
+  - "&a%player% leave the server"
+  - "&aWhen is frozen."
+  - "&f(Click here to ban)"
+  - "&7-----------------------------"
+  
+helpop_format:
+  - "&7-----------------------------"
+  - "&e(Help-Op)%player%&f: %message%"
+  - "&c(&fClick Here&c)"
+  - "&7-----------------------------"
+chat:
+   tl: "&a%player%: %location%"
+   mute: "&aThe chat is muted"
+   muteoff: "&aThe chat now is not muted."
+   muteon: "&aThe chat now is muted."
+   faction: "&a(Faction)%player%:&f %message%"
+   ally: "&e(Ally)%player%:&f %message%"
+   withfac: "&7[%faction%&7]&a %playername%&7:&f %message%"
+   withoutfac: "&a%playername%&7:&f %message%" 
+faction:  
+   disband_message: "&c%faction% &ehas been disbanded by %player%"
+   create_message: "&c%faction% &ehas been created by %player%"
+   enderpearl_safezone: "&aYou cannot Enderpearl into safe-zones, used Enderpearl has been refunded."
+   break_message_end: "You cannot build in the end."     
+   friendlyfire: "&aYou can't attack %victim% is in your faction."
+endplayers-command:
+ - "&8&m-------------------------------------------" 
+ - "&e» Players in the end is: %players%"
+ - "&8&m-------------------------------------------" 
+netherplayers-command:
+ - "&8&m-------------------------------------------" 
+ - "&e» Players in the nether is: %players%"
+ - "&8&m-------------------------------------------"  
+coords:
+  - "&8&m-------------------------------------------"  
+  - "&8» &cEdit this in config.yml"    
+  - "&8&m-------------------------------------------"  
+HELP:
+  - "&8&m-------------------------------------------"
+  - "&8» &cEdit this in config.yml"
+  - "&8&m-------------------------------------------"  
+king:
+  event:
+     ended: "&eYou have successfully terminated the King Event."
+     specify-king: "&cYou must specify a player to set as King"
+     started: "&eYou have successfully started a Kill The King Event"
+     active: "&eThere is already a Kill The King Event Active."
+  not-found: "&cThere is no active kill the King Event"
+  death:
+      - "&7&m--------------------------------"
+      - "&6&lKing Event&7:"
+      - "&eThe King Is Death!"
+      - "&7&m--------------------------------"
+  status:
+       - "&7&m--------------------------------"
+       - "&6&lKing Event&7:"
+       - "&eKing Name&7: &f%king%"
+       - "&eKing Location&7: &f%kingx%,%kingy%,%kingz%"
+       - "&eKing Health&f: &f%health%"
+       - "&7&m--------------------------------"
+  help:
+       - "&7&m--------------------------------"
+       - "&6&lKing Help&7:"
+       - "&e/ktk status &7 - &fReturns the status of the king event"
+       - "&e/ktk (player) &7- &fStart a king event"
+       - "&e/ktk end &7- &fEnds the active kill the king event"
+       - "&7&m--------------------------------"
+  force-end:
+        - "&7&m--------------------------------"
+        - "&6&lKing Event&7:"
+        - "&eThe King Event Has Been Terminated"
+        - "&7&m--------------------------------"
+other:
+   chatbypass: "hcf.chatbypass"
+command:
+   mod: "hcf.mod"
+   craft: "hcf.vip"
+   endplayers: "hcf.vip"
+   netherplayers: "hcf.vip"
+   set: "hcf.owner"
+   spawn: "hcf.mod"
+   chat: "hcf.chat"    

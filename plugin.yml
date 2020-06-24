@@ -1,0 +1,82 @@
+name: Rosario
+version: 0.1
+description: Nothing to say.
+author: DoctorDark
+main: com.doctordark.hcf.HCF
+softdepend: [ProtocolLib]
+commands:
+  craft:
+  mod:
+  tl:
+  helpop:
+  set:
+  hcf:
+    description: management for the plugin.
+  chat:
+    description: manage the chat.  
+  netherplayers:
+  endplayers:
+  random:
+  content:
+  sotw:
+  refund:
+  angle:
+    description: Check your yaw and pitch position.
+  crowbar:
+    description: Management of crowbar tools.
+  conquest:
+    description: Command used to handle Conquest events.
+  economy:
+    aliases: [bal, money, eco, econ]
+    description: Command used to modify the economy.
+  end:
+    description: Command used to close or open the end.
+  eotw:
+    aliases: [endoftheworld]
+    description: Sets if the server is in End of the World mode.
+  event:
+    description: Command used to manage minigame events.
+  faction:
+    aliases: [f, fac]
+    description: Faction related commands.
+  gopple:
+    description: Command to check remaining OP apple cooldown time.
+    aliases: [goppletimer, goppletime]
+  help:
+    aliases: ["?"]
+    description: Find out more about this server.
+  koth:
+    description: Make or delete KotH arenas.
+  lives:
+    description: Management of lives or deathbans.
+  location:
+    aliases: [loc]
+    description: Check the faction location of a player.
+  logout:
+    aliases: [disconnect]
+    description: Command to safely logout without an NPC spawning.
+  mapkit:
+    description: Used to check the current map restrictions.
+  pay:
+    description: Allow players to pay money.
+  pvptimer:
+    aliases: [pvp]
+    description: Command to enable or disable pvp timer protection.
+  servertime:
+    description: Checks the date and time of server.
+  setborder:
+    aliases: [setbordersize]
+    description: Sets the border size of an Environment.
+  cannon:
+    aliases: [cannon, playercannon]
+    description: Shoots you into the warzone.
+  spawn:
+    description: Teleport to the server spawn.
+  staffrevive:
+  timer:
+    description: Command to manage timers.
+  togglecapzone:
+    description: Command used to hide or show capture zone entry messages.
+  togglelightning:
+    description: Toggles the lightning strikes for when a player dies.
+ 
